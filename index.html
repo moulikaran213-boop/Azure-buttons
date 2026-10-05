@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Azure App</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding-top: 100px;
+            background: lightblue;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to My Azure App 🚀</h1>
+
+    <p id="message">Click a button below</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <button onclick="resetPage()">Reset</button>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Hello! My application is running on Azure 🚀";
+        }
+
+        function changeColor() {
+            document.body.style.backgroundColor = "lightgreen";
+        }
+
+        function resetPage() {
+            document.body.style.backgroundColor = "lightblue";
+            document.getElementById("message").innerHTML =
+                "Click a button below";
+        }
+    </script>
+
+</body>
+</html>
